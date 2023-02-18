@@ -13,20 +13,16 @@ public class UserService {
     @Autowired
     UserRepository userRepository3;
 
-    @Autowired
-    BlogService blogService3;
+    public User createUser(String username, String password){
 
-    public void createUser(User user){
+
     }
 
     public void deleteUser(int userId){
+
     }
 
-    public void updateUser(User user){
-        userRepository3.save(user);
-    }
+    public User updateUser(Integer id, String password){
 
-    public User findUserByUsername(String username){
-        return userRepository3.findByUsername(username);
     }
 }
